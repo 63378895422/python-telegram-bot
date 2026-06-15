@@ -142,7 +142,7 @@ def event_loop(request):
     if sys.platform.startswith("win"):
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     return asyncio.get_event_loop_policy().new_event_loop()
-    # loop.close() # instead of closing here, do that at the every end of the test session
+    # loop.close() # instead of closing here, do that at the very end of the test session
 
 
 @pytest.fixture(scope="session")
