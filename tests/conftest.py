@@ -316,7 +316,7 @@ def false_update(request):
 )
 def _tz_implementation(request):
     # This fixture is used to parametrize the timezone fixture
-    # This is similar to what @pyttest.mark.parametrize does but for fixtures
+    # This is similar to what @pytest.mark.parametrize does but for fixtures
     # However, this is needed only internally for the `tzinfo` fixture, so we keep it private
     return request.param
 
