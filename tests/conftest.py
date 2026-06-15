@@ -181,7 +181,7 @@ async def cdc_bot(bot_info):
 
 @pytest.fixture(scope="session")
 async def raw_bot(bot_info):
-    """Makes an regular Bot instance with the given bot_info"""
+    """Makes a regular Bot instance with the given bot_info"""
     async with PytestBot(
         bot_info["token"],
         private_key=PRIVATE_KEY if TEST_WITH_OPT_DEPS else None,
