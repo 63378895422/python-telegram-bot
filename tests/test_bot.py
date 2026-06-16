@@ -210,7 +210,7 @@ def bot_methods(ext_bot=True, include_camel_case=False, include_do_api_request=F
 class InputMessageContentLPO(InputMessageContent):
     """
     This is here to cover the case of InputMediaContent classes in testing answer_ilq that have
-    `link_preview_options` but not `parse_mode`. Unlikely to ever happen, but better be save
+    `link_preview_options` but not `parse_mode`. Unlikely to ever happen, but better be safe
     than sorry …
     """
 
