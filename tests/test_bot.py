@@ -626,7 +626,7 @@ class TestBotWithoutRequest:
 
         As for most defaults,
         we can't really check the effect, we just check if we're passing the correct kwargs to
-        Request.post. As offline_bot method tests a scattered across the different test files, we
+        Request.post. As offline_bot method tests are scattered across the different test files, we
         do this here in one place.
 
         The same test is also run for all the shortcuts (Message.reply_text) etc in the
